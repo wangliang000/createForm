@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "使用 TypeScript，未使用任何 UI 库。",
   "dependencies": {
+    "@alifd/next": "^1.25.29",
+    "@formily/core": "^2.0.18",
+    "@formily/next": "^2.0.18",
+    "@formily/react": "^2.0.18",
+    "moment": "^2.29.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

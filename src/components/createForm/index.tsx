@@ -2,16 +2,16 @@ import { createForm } from '@formily/core';
 import * as NextUI from '@formily/next';
 import { createSchemaField, FormProvider } from '@formily/react';
 import { memo } from 'react';
-const ui = { DatePicker: 'DatePicker', FormItem: 'FormItem' };
-
-
-const SchemaField = createSchemaField({
-  components: registryUi,
-});
+import registryUi from './registryUi';
 
 const form = createForm();
 
-const CreateFormContainer = ({ schema }) => {
+const CreateFormContainer = ({ schema, components }) => {
+  const registriedUi = registryUi(components, NextUI);
+
+  const SchemaField = createSchemaField({
+    components: registriedUi,
+  });
   return (
     <FormProvider form={form}>
       {/* <Form labelCol={5} wrapperCol={16}> */}
