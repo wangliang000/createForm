@@ -1,7 +1,7 @@
 
 ## Simple
 
-> A TypeScript simple template
+> A formily 封装
 
 ## 使用
 
